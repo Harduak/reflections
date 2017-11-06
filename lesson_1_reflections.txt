@@ -1,0 +1,46 @@
+How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+- By viewing a diff beteen two verions of the file you can see the actual line
+of code with the mistake.
+_________________________________________________________________________________
+
+How could having easy access to the entire history of a file make you more
+efficient programmer in the long term?
+
+- Having access to the entire history of a file you can view the differences
+between old and new versions of that file in order to improve you skill.
+_________________________________________________________________________________
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like
+Google docs does?
+
+- Pro: you commit to logical changes
+- Cons: you can forget to commit and you may lose all the work
+________________________________________________________________________________
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file
+separately?
+
+- Saving multiple files in one commit can be very heplful
+___________________________________________________________________________
+How can you use the commands git log and git diff to view the history of
+files?
+
+- You use git log to see all the versions commited and you can use the git
+  diff command to compare two versions.
+___________________________________________________________________________
+
+How might using version control make you more confident to make changes that
+could break something?
+
+- Because if you break something, you always have the old version of the file or
+  repository
+________________________________________________________________________________
+Now that you have your workspace set up, what do you want to try using Git for?
+
+- I don't know. But with Git i can save different versions of my files.
+________________________________________________________________________________
+
