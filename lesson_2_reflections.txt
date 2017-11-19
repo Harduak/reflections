@@ -1,0 +1,69 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+- When you type git init and initialize a repository a .git file appears in your
+directory. If you want to commit you have to initialize a repository.
+_________________________________________________________________________
+
+How is the staging area different form the working directory and the repository? What value do you think it offers?
+
+- Staging area allows to prepare the files that are going to be commited. It
+hepls to divide changes in the working directory into several commits, each of
+which consists of a group of changes that represent a logical change to the 
+relevant files.
+___________________________________________________________________________
+
+How can you use the staging area to make sure you have one commit per logical
+change ?
+
+- First add files that are related to the first logical change you want to comitand after making it sure you have staged all the files, make a commit. Next you
+stage other files that are related to the second logical change you want to
+commit, and so on.
+_______________________________________________________________________________
+
+What are some situtions when branches would be helpful in keeping your history
+organized? How would branches help?
+
+- When you want to try adding an experimental feature while keeping your
+software working without breaking. To do so, keep your master branch clean of
+any untested changes, instead make an experimental branch for any new feature
+that needs.
+_______________________________________________________________________________
+
+How do the diagrams help you visualize the branch structure?
+
+- When using git log --graph (possibly with --oneline) [branch names...], you
+can easily tell how the whole branch structure was developed and at which point
+each branch was actually created. That would give you the overview of the whole
+structure of the project you are working on, so that you can tell what you are 
+specifically focusing on and when and which branch to merge your work.
+	The diagram show what the parent of each commit is. When there are
+multiple branches, I can use the diagrams to easily see what changes will be
+part of each branch. They also let me easily see what commit each branch refers
+to.
+______________________________________________________________________________
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+- Merging two branches together results in a combined commit with all the changes
+from both branches. We represent the merge in the diagram as having two parents -
+the two commits that it combined. For non-merge commits, the parent of the commit
+is the state of the files before that commit was made. For merge commits, there was
+no one state of the before the commit was made, since the merge commit combines two
+commits together, so it makes sense for the merge commit to have two parents.
+________________________________________________________________________________
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+- Git's automatic merging can save the user a lot of time! Especially when multiple
+people are working together, merging everything manually could be very painful.
+
+The downside of automatic merging is that it's not perfect. Merging the coins branch
+with the master branch, which included color, resulted in inconsistent visuals, where
+most items were colored but the coins were not. Git could even make worse mistakes -
+for example, if one branch deleted a function, and another branch added a call to that
+function, Git would merge those together with no conflict and the resulting code would
+be broken.
+
+Overall, Git's merging can save a lot of time, but it's important to always double
+check that the code still works after doing a merge.
