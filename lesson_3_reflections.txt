@@ -47,4 +47,4 @@ have ?
   
   I tend to work directly in master more often when I'm working on my own or with just one or two people. When working
 with a large group, though, using branches to keep track of which changes have already been reviewed and approved is
-extremely helpful .
+extremely helpful.
